@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#0a0e17"/>
+<meta name="description" content="Developer OS — Moe Kyaw Aung, Senior Android Engineer. 3D windowed portfolio."/>
+<title>MKA-OS · Developer Desktop · MKA-OS</title>
+<link rel="stylesheet" href="css/os.css"/>
+<link rel="icon" href="https://res.cloudinary.com/dye5qpwii/image/upload/v1778763535/MKA_25_lbx6fb.webp"/>
+</head>
+<body>
+<div class="desktop" aria-hidden="true"></div>
+<div class="desk-grid" aria-hidden="true"></div>
+<div id="gl-particles" aria-hidden="true"></div>
+
+<header class="menubar">
+  <div class="menubar-in">
+    <a class="os-logo" href="index.html"><span class="os-dot"></span> MKA-OS <em>v2026</em></a>
+    <ul class="menu-links">
+    <li><a href="index.html" class="on">Desktop</a></li>
+    <li><a href="pages/projects.html">Windows</a></li>
+    <li><a href="pages/skills.html">Skills</a></li>
+    <li><a href="pages/architecture.html">Kernel</a></li>
+    <li><a href="pages/contact.html">Contact</a></li></ul>
+    <div class="menu-act">
+      <span class="chip" id="osClock">--:--</span>
+      <button type="button" class="chip" id="langBtn">MY</button>
+      <button type="button" class="burger" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<div class="stage"><div class="stage-inner">
+
+<section class="win hero-win depth zoom-in" id="hero">
+  <div class="win-bar">
+    <div class="win-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    <span class="win-title">home.desktop — MKA-OS</span>
+    <span class="win-badge">ACTIVE</span>
+  </div>
+  <div class="win-body hero">
+    <div class="hero-grid">
+      <div>
+        <div class="status rv"><i></i> <span data-i18n="open">System online · open to senior roles</span></div>
+        <h1 class="rv">Moe Kyaw Aung<br/><span class="grad">Developer OS</span></h1>
+        <p class="hero-sub rv">မိုးကျော်အောင် · Senior Android Engineer</p>
+        <p class="hero-desc rv" data-i18n="tag">Developer OS — Kotlin, Compose, clean architecture, offline-first modules as windows on a 3D desktop.</p>
+        <div class="stats rv">
+          <div class="stat"><b data-count="10">0</b><span>Years</span></div>
+          <div class="stat"><b data-count="40">0</b><span>Apps</span></div>
+          <div class="stat"><b data-count="82">0</b><span>Certs</span></div>
+          <div class="stat"><b data-count="15">0</b><span>Modules</span></div>
+        </div>
+        <div class="btns rv">
+          <a class="btn btn-p" href="#apps">Open apps</a>
+          <a class="btn btn-g" href="pages/architecture.html">Kernel</a>
+          <a class="btn btn-g" href="pages/contact.html">Mail</a>
+        </div>
+      </div>
+      <div class="holo-panel rv">
+        <div class="holo-orb"></div>
+        <p><strong>Process: portfolio</strong><br/>Compose · Room · CI</p>
+        <div class="holo-tags"><span>SwiftUI?</span><span>Kotlin</span><span>SPM/Gradle</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<p class="sec-label">process · about</p>
+<section class="win float-l zoom-in">
+  <div class="win-bar">
+    <div class="win-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    <span class="win-title">about.txt</span>
+    <span class="win-badge">READ</span>
+  </div>
+  <div class="win-body">
+    <div class="g2">
+      <div>
+        <p style="color:var(--tx2);margin-bottom:.85rem">Senior Android engineer. Systems that stay coherent under change — presented here as an OS of windows, not a static brochure.</p>
+        <p style="color:var(--violet);font-weight:600">“Code with culture. Build with purpose.”</p>
+      </div>
+      <ul class="clist">
+        <li><span>Role</span><strong>Senior Android Engineer</strong></li>
+        <li><span>Stack</span><strong>Kotlin · Compose · Room</strong></li>
+        <li><span>Locale</span><strong>Tachileik · Bangkok</strong></li>
+        <li><span>Status</span><strong style="color:var(--green)">Online</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<p class="sec-label">process · skills</p>
+<section class="win float-r zoom-in" id="skillsPanel">
+  <div class="win-bar">
+    <div class="win-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    <span class="win-title">skills.monitor</span>
+    <span class="win-badge">LIVE</span>
+  </div>
+  <div class="win-body"><div class="skill"><div class="skill-top"><span>Kotlin</span><span>98%</span></div><div class="bar"><i data-w="98"></i></div></div><div class="skill"><div class="skill-top"><span>Jetpack Compose</span><span>96%</span></div><div class="bar"><i data-w="96"></i></div></div><div class="skill"><div class="skill-top"><span>Clean Architecture</span><span>95%</span></div><div class="bar"><i data-w="95"></i></div></div><div class="skill"><div class="skill-top"><span>Room / Offline</span><span>93%</span></div><div class="bar"><i data-w="93"></i></div></div><div class="skill"><div class="skill-top"><span>CI/CD</span><span>88%</span></div><div class="bar"><i data-w="88"></i></div></div><div class="skill"><div class="skill-top"><span>Testing</span><span>86%</span></div><div class="bar"><i data-w="86"></i></div></div></div>
+</section>
+
+<p class="sec-label">process · kernel</p>
+<section class="win zoom-in tilt">
+  <div class="win-bar">
+    <div class="win-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    <span class="win-title">kernel.architecture</span>
+    <span class="win-badge">SYS</span>
+  </div>
+  <div class="win-body">
+    <p style="color:var(--tx2);margin-bottom:.85rem">UI → Domain → Data → Sync. Multi-module Gradle. Each boundary is a process isolation line.</p>
+    <div class="g2">
+      <div style="padding:.85rem;border-radius:10px;border:1px solid var(--line);background:rgba(110,168,254,.05)"><strong style="color:var(--accent)">Presentation</strong><p style="color:var(--tx3);font-size:.8rem;margin-top:.25rem">Compose · ViewModels</p></div>
+      <div style="padding:.85rem;border-radius:10px;border:1px solid var(--line);background:rgba(61,255,240,.04)"><strong style="color:var(--cyan)">Domain</strong><p style="color:var(--tx3);font-size:.8rem;margin-top:.25rem">Use cases · pure Kotlin</p></div>
+      <div style="padding:.85rem;border-radius:10px;border:1px solid var(--line);background:rgba(167,139,250,.05)"><strong style="color:var(--violet)">Data</strong><p style="color:var(--tx3);font-size:.8rem;margin-top:.25rem">Room · DataStore · API</p></div>
+      <div style="padding:.85rem;border-radius:10px;border:1px solid var(--line);background:rgba(52,211,153,.05)"><strong style="color:var(--green)">Sync</strong><p style="color:var(--tx3);font-size:.8rem;margin-top:.25rem">WorkManager · push</p></div>
+    </div>
+    <p style="margin-top:1rem"><a class="btn btn-g" href="pages/architecture.html">Open kernel docs →</a></p>
+  </div>
+</section>
+<p class="sec-label" id="apps">processes · applications</p>
+<div class="proj-grid">
+
+<article class="win proj-win zoom-in tilt">
+  <div class="win-bar">
+    <div class="win-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    <span class="win-title">PulseSync.app</span>
+    <span class="win-badge">#01</span>
+  </div>
+  <div class="win-body">
+    <h3>PulseSync</h3>
+    <p>Offline-first realtime sync</p>
+    <div class="tags"><span class="tag c">Compose</span><span class="tag">Room</span><span class="tag">Firebase</span></div>
+    <p style="margin-top:.75rem"><a class="btn btn-g" href="pages/projects.html" style="min-height:36px;padding:.45rem .9rem;font-size:.78rem">Open window →</a></p>
+  </div>
+</article>
+<article class="win proj-win zoom-in tilt">
+  <div class="win-bar">
+    <div class="win-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    <span class="win-title">POS Ultimate.app</span>
+    <span class="win-badge">#02</span>
+  </div>
+  <div class="win-body">
+    <h3>POS Ultimate</h3>
+    <p>Retail throughput system</p>
+    <div class="tags"><span class="tag v">Room</span><span class="tag">Sync</span><span class="tag">Print</span></div>
+    <p style="margin-top:.75rem"><a class="btn btn-g" href="pages/projects.html" style="min-height:36px;padding:.45rem .9rem;font-size:.78rem">Open window →</a></p>
+  </div>
+</article>
+<article class="win proj-win zoom-in tilt">
+  <div class="win-bar">
+    <div class="win-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    <span class="win-title">Social Dashboard.app</span>
+    <span class="win-badge">#03</span>
+  </div>
+  <div class="win-body">
+    <h3>Social Dashboard</h3>
+    <p>Analytics surface</p>
+    <div class="tags"><span class="tag">MVVM</span><span class="tag">Charts</span></div>
+    <p style="margin-top:.75rem"><a class="btn btn-g" href="pages/projects.html" style="min-height:36px;padding:.45rem .9rem;font-size:.78rem">Open window →</a></p>
+  </div>
+</article>
+<article class="win proj-win zoom-in tilt">
+  <div class="win-bar">
+    <div class="win-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    <span class="win-title">Video Player.app</span>
+    <span class="win-badge">#04</span>
+  </div>
+  <div class="win-body">
+    <h3>Video Player</h3>
+    <p>Media cache pipeline</p>
+    <div class="tags"><span class="tag c">ExoPlayer</span><span class="tag">Cache</span></div>
+    <p style="margin-top:.75rem"><a class="btn btn-g" href="pages/projects.html" style="min-height:36px;padding:.45rem .9rem;font-size:.78rem">Open window →</a></p>
+  </div>
+</article>
+<article class="win proj-win zoom-in tilt">
+  <div class="win-bar">
+    <div class="win-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    <span class="win-title">Weather.app</span>
+    <span class="win-badge">#05</span>
+  </div>
+  <div class="win-body">
+    <h3>Weather</h3>
+    <p>Flow + offline cache</p>
+    <div class="tags"><span class="tag">Retrofit</span><span class="tag">Flow</span></div>
+    <p style="margin-top:.75rem"><a class="btn btn-g" href="pages/projects.html" style="min-height:36px;padding:.45rem .9rem;font-size:.78rem">Open window →</a></p>
+  </div>
+</article>
+<article class="win proj-win zoom-in tilt">
+  <div class="win-bar">
+    <div class="win-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    <span class="win-title">Job Portal.app</span>
+    <span class="win-badge">#06</span>
+  </div>
+  <div class="win-body">
+    <h3>Job Portal</h3>
+    <p>Clean listing flows</p>
+    <div class="tags"><span class="tag v">Architecture</span></div>
+    <p style="margin-top:.75rem"><a class="btn btn-g" href="pages/projects.html" style="min-height:36px;padding:.45rem .9rem;font-size:.78rem">Open window →</a></p>
+  </div>
+</article></div>
+
+<p class="sec-label">process · mail</p>
+<section class="win float-l zoom-in" id="contact">
+  <div class="win-bar">
+    <div class="win-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    <span class="win-title">mail.app</span>
+    <span class="win-badge">SMTP</span>
+  </div>
+  <div class="win-body">
+    <div class="g2">
+      <ul class="clist">
+        <li><span>Phone</span><strong>+95 9 889 000 889</strong></li>
+        <li><span>Email</span><strong>moekyawaung@asia.com</strong></li>
+        <li><span>GitHub</span><strong>Dev-moe-kyawaung</strong></li>
+        <li><span>Locale</span><strong>Tachileik · Bangkok</strong></li>
+      </ul>
+      <form class="form" id="contactForm">
+        <input name="name" placeholder="Name" required/>
+        <input type="email" name="email" placeholder="Email" required/>
+        <textarea name="message" rows="3" placeholder="Message" required></textarea>
+        <button class="btn btn-p" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+</div></div>
+
+<nav class="dock" aria-label="Dock">
+  <div class="dock-in">
+    <a href="index.html"><span class="ico">⌂</span>Home</a>
+    <a href="pages/projects.html"><span class="ico">▣</span>Apps</a>
+    <a href="pages/skills.html"><span class="ico">◈</span>Skills</a>
+    <a href="pages/architecture.html"><span class="ico">⬡</span>Kernel</a>
+    <a href="pages/contact.html"><span class="ico">✉</span>Mail</a>
+    <button type="button" id="dockAi" onclick="document.getElementById('aiFab').click()"><span class="ico">AI</span>Bot</button>
+  </div>
+</nav>
+
+<button type="button" class="ai-fab" id="aiFab" aria-label="System AI">BOT</button>
+<div class="ai-bot" id="aiBot" role="dialog" aria-label="System AI">
+  <div class="win-bar">
+    <div class="win-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    <span class="win-title">system.ai — MKA-OS</span>
+    <span class="win-badge">PID 1</span>
+    <button type="button" class="chip" id="aiClose" style="min-height:28px;padding:.2rem .5rem">✕</button>
+  </div>
+  <div class="ai-bd" id="aiBd">
+    <div class="bub sys">[boot] System AI online. Type /status or ask about Compose, architecture, Kotlin.</div>
+  </div>
+  <div class="ai-ft"><input id="aiIn" placeholder="command or question…" autocomplete="off"/><button type="button" id="aiSend">Run</button></div>
+</div>
+<script src="js/particles.js"></script>
+<script src="js/os.js"></script>
+</body></html>

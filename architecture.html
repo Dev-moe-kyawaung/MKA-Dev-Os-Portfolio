@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#0a0e17"/>
+<meta name="description" content="Developer OS — Moe Kyaw Aung, Senior Android Engineer. 3D windowed portfolio."/>
+<title>Kernel · MKA-OS</title>
+<link rel="stylesheet" href="../css/os.css"/>
+<link rel="icon" href="https://res.cloudinary.com/dye5qpwii/image/upload/v1778763535/MKA_25_lbx6fb.webp"/>
+</head>
+<body>
+<div class="desktop" aria-hidden="true"></div>
+<div class="desk-grid" aria-hidden="true"></div>
+<div id="gl-particles" aria-hidden="true"></div>
+
+<header class="menubar">
+  <div class="menubar-in">
+    <a class="os-logo" href="../index.html"><span class="os-dot"></span> MKA-OS <em>v2026</em></a>
+    <ul class="menu-links">
+    <li><a href="../index.html">Desktop</a></li>
+    <li><a href="projects.html">Windows</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="architecture.html">Kernel</a></li>
+    <li><a href="contact.html">Contact</a></li></ul>
+    <div class="menu-act">
+      <span class="chip" id="osClock">--:--</span>
+      <button type="button" class="chip" id="langBtn">MY</button>
+      <button type="button" class="burger" id="menuBtn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<div class="stage"><div class="stage-inner"><div class="page-hero"><h1>Kernel</h1><p>MKA-OS · Moe Kyaw Aung</p></div><div class="win zoom-in"><div class="win-bar"><div class="win-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div><span class="win-title">kernel.md</span></div>
+    <div class="win-body">
+      <p style="color:var(--tx2);margin-bottom:1rem">Isolation boundaries for Android systems that scale.</p>
+      <div class="g2">
+        <div style="padding:.85rem;border:1px solid var(--line);border-radius:10px"><strong style="color:var(--accent)">Presentation</strong><p style="color:var(--tx3);font-size:.85rem;margin-top:.3rem">Compose, navigation, state holders.</p></div>
+        <div style="padding:.85rem;border:1px solid var(--line);border-radius:10px"><strong style="color:var(--cyan)">Domain</strong><p style="color:var(--tx3);font-size:.85rem;margin-top:.3rem">Use cases, pure models, policies.</p></div>
+        <div style="padding:.85rem;border:1px solid var(--line);border-radius:10px"><strong style="color:var(--violet)">Data</strong><p style="color:var(--tx3);font-size:.85rem;margin-top:.3rem">Room, network, mappers.</p></div>
+        <div style="padding:.85rem;border:1px solid var(--line);border-radius:10px"><strong style="color:var(--green)">Delivery</strong><p style="color:var(--tx3);font-size:.85rem;margin-top:.3rem">CI, TestFlight/Play, observability.</p></div>
+      </div>
+    </div></div><p style="margin:1.5rem 0"><a class="btn btn-g" href="../index.html">← Desktop</a></p></div></div>
+<nav class="dock" aria-label="Dock">
+  <div class="dock-in">
+    <a href="../index.html"><span class="ico">⌂</span>Home</a>
+    <a href="../pages/projects.html"><span class="ico">▣</span>Apps</a>
+    <a href="../pages/skills.html"><span class="ico">◈</span>Skills</a>
+    <a href="../pages/architecture.html"><span class="ico">⬡</span>Kernel</a>
+    <a href="../pages/contact.html"><span class="ico">✉</span>Mail</a>
+    <button type="button" id="dockAi" onclick="document.getElementById('aiFab').click()"><span class="ico">AI</span>Bot</button>
+  </div>
+</nav>
+
+<button type="button" class="ai-fab" id="aiFab" aria-label="System AI">BOT</button>
+<div class="ai-bot" id="aiBot" role="dialog" aria-label="System AI">
+  <div class="win-bar">
+    <div class="win-dots"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    <span class="win-title">system.ai — MKA-OS</span>
+    <span class="win-badge">PID 1</span>
+    <button type="button" class="chip" id="aiClose" style="min-height:28px;padding:.2rem .5rem">✕</button>
+  </div>
+  <div class="ai-bd" id="aiBd">
+    <div class="bub sys">[boot] System AI online. Type /status or ask about Compose, architecture, Kotlin.</div>
+  </div>
+  <div class="ai-ft"><input id="aiIn" placeholder="command or question…" autocomplete="off"/><button type="button" id="aiSend">Run</button></div>
+</div>
+<script src="../js/particles.js"></script>
+<script src="../js/os.js"></script>
+</body></html>
